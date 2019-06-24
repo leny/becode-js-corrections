@@ -10,5 +10,19 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  var gateau = prompt("Voulez-vous du gâteau, oui ou non ?");
+
+  // Variable récupère les données encodées par l'user
+
+  if (gateau === "oui") {
+    alert("Bravo !");
+  }
+
+  // Si l'user a encodé oui, alert Bravo
+
+  if (gateau === "non") {
+    alert("Arrête de jouer les héros et prends du gâteau !");
+  }
+
+  // S'il répond non, alert la phrase
 })();
