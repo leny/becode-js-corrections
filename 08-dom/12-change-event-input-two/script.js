@@ -10,5 +10,31 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    // base = copie exo précédent
+
+//définir variable compteur i
+var i = 0;
+var a = 0;
+
+//évènement saisie de touche clavier sur l'input
+document.querySelector("input").onkeyup=function(){
+    
+i++;
+var u = document.getElementById("pass-one").value;
+var reG =  /\d/;
+
+if (reG.test(u)){
+    a++;
+    };
+
+if (i>=8 && a>=2){
+    document.getElementById("validity").innerHTML = "OK";
+    };
+
+// console.log(a);
+// console.log(u);
+// console.log(i);
+
+};
+
 })();
