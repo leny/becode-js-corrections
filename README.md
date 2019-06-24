@@ -36,30 +36,3 @@ Une fois fait, utilisez votre terminal pour *naviguer* dans le dossier du prése
 Si tout se passe bien, votre navigateur par défaut s'ouvrira sur l'adresse [localhost:8000](https://localhost:8000).
 
 > 👉 Ne vous tracassez pas trop de node.js pour le moment. Nous y reviendrons bien assez tôt...
-
-## Ressources
-
-Pour appréhender au mieux ces exercices, quelques ressources utiles :
-
-### Slides
-
-- [Javascript - introduction](https://docs.google.com/presentation/d/156vrNVBSOSy_YdHRKbaoqXfr3GALC2dtZFbaU-pR5eI/edit#slide=id.g35f391192_04)
-- [Javascript - le DOM](https://docs.google.com/presentation/d/1zcucIJ-y8xyT5rjCE5hpPjBWq-RjIBusuXvIygfnqPQ/edit?usp=sharing) (ces slides peuvent être abordés à la fin de la série 5)
-
-### Liens
-
-- [Javascript in 14 minutes](https://jgthms.com/javascript-in-14-minutes/) 🇬🇧
-- [Silent Teacher](http://silentteacher.toxicode.fr/)
-- [Solo Learn - Javascript](https://www.sololearn.com/Course/JavaScript/) 🇬🇧
-- [Sabe - Javascript](https://sabe.io/classes/javascript) 🇬🇧
-- [Guide Javascript de Mozilla](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Apropos) 🇬🇧 🇫🇷
-- [jsfiddle](https://jsfiddle.net/) - pour tester vos codes js
-- [learn x in y minutes](https://learnxinyminutes.com/docs/javascript/) 🇬🇧
-- [learn js](http://www.learn-js.org/) 🇬🇧
-- [10 js array methods](https://dev.to/frugencefidel/10-javascript-array-methods-you-should-know-4lk3) 🇬🇧
-
-* * *
-
-Bon travail !
-
-![](https://media.giphy.com/media/xT9DPPqwOCoxi3ASWc/giphy.gif)
