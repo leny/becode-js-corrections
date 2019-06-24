@@ -9,6 +9,27 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
+
 (() => {
-    // your code here
-})();
+
+        // Créer une variable bouton
+        var bouton = false;
+
+        // execute ce code tant que bouton est FAUX
+        while (bouton == false) {
+            //Prompt = un input de l'utilisateur 
+            var age = prompt("Quel âge avez-vous?");
+            var genre = prompt("Quel est votre genre?");
+            var ville = prompt("Quelle est votre ville ?");
+
+            // si confirme bouton devien VRAI 
+            if (confirm(age + " " + genre + " " + ville)) { // 
+                bouton = true;
+
+                // SINON c'est reparti pour un tour ... 
+            } else {}
+        }
+    }
+
+)();
