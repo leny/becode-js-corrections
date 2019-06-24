@@ -88,5 +88,23 @@
         },
     ];
 
+    
+
     // your code here
+    // Au clic sur le bouton, crée un nouveau tableau à partir du tableau people, qui ne contiendra 
+    // que les personnes dont l'âge est supérieur à 18 ans. Affiche le tableau résultant dans la console.
+
+    document.querySelector('button').onclick=function(){
+
+        let PeopleOver18=people.filter(function(a){
+        if (a.age > 18)
+        {
+            return true;
+        }
+          
+});
+
+console.log(PeopleOver18);
+}
+
 })();
