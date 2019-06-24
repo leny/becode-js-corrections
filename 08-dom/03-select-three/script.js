@@ -10,5 +10,11 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    //Fonction fléchée
+    document.querySelectorAll('.target').forEach((el) => {
+      console.log(el.innerHTML = "owned");
+    }
+  );
+
 })();
