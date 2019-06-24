@@ -23,4 +23,8 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        console.log(`Il y a ${people.size} personnes dans le set.`);
+        console.log(people.has("Alexandre"));
+    });
 })();
