@@ -10,21 +10,30 @@
 // You will have time to focus on it later.
 
 (() => {
-    // to get the value of an input: document.getElementById("element-id").value
-
     document.getElementById("addition").addEventListener("click", () => {
-        // perform an addition
+        let num1 = document.getElementById("op-one").value;
+        let num2 = document.getElementById("op-two").value;
+        alert(num1+" + "+num2+" = "+ ( parseInt(num1) + parseInt(num2)));
     });
 
     document.getElementById("substraction").addEventListener("click", () => {
-        // perform an substraction
+        let num1 = document.getElementById("op-one").value;
+        let num2 = document.getElementById("op-two").value;
+        alert(num1+" - "+num2+" = "+ ( parseInt(num1) - parseInt(num2)));
     });
 
     document.getElementById("multiplication").addEventListener("click", () => {
-        // perform an multiplication
+        let num1 = document.getElementById("op-one").value;
+        let num2 = document.getElementById("op-two").value;
+        alert(num1+" x "+num2+" = "+ ( parseInt(num1) * parseInt(num2)));
     });
 
     document.getElementById("division").addEventListener("click", () => {
-        // perform an division
+        let num1 = document.getElementById("op-one").value;
+        let num2 = document.getElementById("op-two").value;
+        if (num2 != 0)
+            alert(num1+" / "+num2+" = "+ ( parseInt(num1) / parseInt(num2)));
+        else
+            alert("Impossible de diviser par 0 !");
     });
 })();
