@@ -10,5 +10,11 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  var HelloWorld = "Hello, World!";
+
+  // Creation de la variable
+
+  alert(HelloWorld);
+
+  // Alerte de la variable
 })();

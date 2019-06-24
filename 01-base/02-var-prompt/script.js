@@ -10,5 +10,11 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  var name = prompt("Quel est votre prénom ?");
+
+  // Variable récupère ce que l'user encode
+
+  alert("Bonjour, " + name + " !");
+
+  // alert Bonjour suivi de ce que l'user a encodé et d'un !
 })();
