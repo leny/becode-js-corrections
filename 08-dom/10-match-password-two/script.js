@@ -10,5 +10,29 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+
+
+  document.getElementById(`run`).addEventListener(`click`, () => {
+
+    let passwordSelect = String(document.getElementById(`pass-one`).value);
+    let passwordConfirm = String(document.getElementById(`pass-two`).value);
+
+/*    if ((passwordSelect == "") && (passwordConfirm == "")) {
+      alert("Veuillez indiquer au moins un caractère pour votre mot de passe svp !");
+    }
+    else if (passwordSelect === passwordConfirm) {
+      alert("Le mot de passe introduit est bien identique à sa confirmation !");
+    }
+    else
+*/
+    if (passwordSelect != passwordConfirm) {
+      document.getElementById(`pass-one`).classList.add(`error`);
+      document.getElementById(`pass-two`).classList.add(`error`);
+    }
+
+  });
+
+// <script>alert("hello world");</script>
+
 })();
