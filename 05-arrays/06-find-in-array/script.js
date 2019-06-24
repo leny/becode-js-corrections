@@ -10,8 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    const people = [
-        {
+    const people = [{
             firstname: "Bradford",
             lastname: "Coldbath",
             email: "bcoldbath0@wired.com",
@@ -54,7 +53,7 @@
         {
             firstname: "Jean",
             lastname: "Dupont",
-            email: "jdupont@elpais.com",
+            email: "jdupont@elpais.com",// the element that i want 
         },
         {
             firstname: "Zulema",
@@ -88,5 +87,17 @@
         },
     ];
 
-    // your code here
+
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        people.forEach((person, index) => { // check this  condition for  every element in  this tableau
+            if (person.firstname == "Jean" && person.lastname == "Dupont") {
+                console.log(  person.lastname + " " + person.firstname + " details:" + "\n" + "Email: " + person.email + "\n" + "Index: " + index);
+            }
+        });
+
+    });
+
+
 })();
