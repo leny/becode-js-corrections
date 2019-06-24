@@ -10,7 +10,8 @@
 // You will have time to focus on it later.
 
 (() => {
-    const people = [{
+    const people = [
+        {
             firstname: "Grenville",
             lastname: "Stive",
             age: 64,
@@ -87,15 +88,5 @@
         },
     ];
 
-    //Methode reduce () reduces an array to one value.
-    //You need a function to perform operation you ll store in the array.
-    var array = [];
-    people.filter(el => {
-        array.push(el.age);
-    });
-    console.log(array);
-    //Function that accum. values. Result is stored in the const.
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
-    console.log(array.reduce(reducer));
-
+    // your code here
 })();
