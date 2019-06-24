@@ -11,4 +11,21 @@
 
 (() => {
     // your code here
+    
+    // au chargement, on recupere dans une variable click le contenu du localstorage si il y en a un, sinon, ca vaut 0          
+    var click = localStorage.getItem("increment") == null? 0 : localStorage.getItem("increment"); 
+
+    // on initialise la target a la valeur de la variable "click"
+    document.getElementById("target").innerText = click; 
+    
+    // on ajoute un event listener sur le click bouton
+    document.getElementById("increment").addEventListener("click", () => { 
+        
+        // au click,on incremente click et on l'affiche.
+        document.getElementById("target").innerText = ++click;
+        // on ecrase click dans le locale storage
+        localStorage.setItem("increment",click); 
+
+
+    });
 })();
