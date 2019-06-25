@@ -10,5 +10,26 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    const fontSizes = [2.2, 2.4, 2.8, 3.2, 3.6, 3.2, 2.8, 2.4, 2.2];
+
+    const target = document.querySelector("#target");
+
+    const text = target.innerText;
+
+    const letters = text.split("");
+
+    let shift = 0;
+
+    setInterval(() => {
+        target.innerHTML = letters
+            .map((letter, i) => {
+                if (++shift >= fontSizes.length) {
+                    shift = 0;
+                }
+                return `<span style="font-size: ${
+                    fontSizes[(i + shift) % fontSizes.length]
+                }rem">${letter}</span>`;
+            })
+            .join("");
+    }, 250);
 })();
