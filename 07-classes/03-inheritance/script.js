@@ -20,17 +20,17 @@
         constructor(name) {
             super();// to call the main class animal 
             this.name = name;
-            this.constructor.greeting = "Meow";
         }
     }
+    Cat.greeting = "Meow";
 
     class Dog extends Animal { // making second class 
         constructor(name) {
             super();// to call main class animal
             this.name = name;
-            this.constructor.greeting = "woof";
         }
     }
+    Dog.greeting = "woof";
 
 
     document.getElementById("run").addEventListener("click", () => {
