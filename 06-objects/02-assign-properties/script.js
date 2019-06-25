@@ -10,6 +10,9 @@
 // You will have time to focus on it later.
 
 (() => {
+
+
+    document.getElementById("run").addEventListener("click", () =>{
     const computers = [
         {id: "0001", available: false, user: "leny", os: "macOS"},
         {id: "0002", available: false, user: "Nicolas"},
@@ -26,5 +29,31 @@
         os: "linux",
         user: null,
     };
-    // your code here
+    let newtab = computers;
+
+    
+
+    newtab.forEach((element) => {
+      if (element.available === undefined)
+      {
+        element.available = defaultProps.available;
+
+      }
+
+      if (element.user === undefined)
+      {
+        element.user = defaultProps.available;
+
+      }
+
+      if (element.os === undefined)
+      {
+        element.os = defaultProps.available;
+
+      };
+    });
+    console.log(newtab);
+});
+//=>Lindsey©
+
 })();

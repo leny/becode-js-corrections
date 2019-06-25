@@ -10,6 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
+    document.getElementById("run").addEventListener("click", () =>{
     const fruits = [
         "pomme",
         "poire",
@@ -24,6 +25,13 @@
         "raisin",
         "cerise",
     ];
+    let copie =[];
 
-    // your code here
+    fruits.forEach((item ) => {
+    console.log(item);
+
+    })
+
+
+    });
 })();
