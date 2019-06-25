@@ -14,21 +14,21 @@
 (() => {
 
         // Créer une variable bouton
-        var bouton = false;
+        var confirmation = false;
 
-        // execute ce code tant que bouton est FAUX
-        while (bouton == false) {
+        // execute ce code tant que confirmation est FAUX
+        while (confirmation == false) {
             //Prompt = un input de l'utilisateur 
             var age = prompt("Quel âge avez-vous?");
             var genre = prompt("Quel est votre genre?");
             var ville = prompt("Quelle est votre ville ?");
 
-            // si confirme bouton devien VRAI 
+            // si confirme confirmation devient VRAI 
             if (confirm(age + " " + genre + " " + ville)) { // 
-                bouton = true;
+                confirmation = true;
 
                 // SINON c'est reparti pour un tour ... 
-            } else {}
+            } 
         }
     }
 
