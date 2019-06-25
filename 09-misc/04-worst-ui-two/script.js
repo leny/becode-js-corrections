@@ -10,5 +10,22 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    const target = document.getElementById("target");
+    const buttons = Array.from(document.querySelectorAll("button"));
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            let value = parseFloat(button.innerText);
+
+            value++;
+
+            if (value > parseFloat(button.getAttribute("data-max"))) {
+                value = button.getAttribute("data-min");
+            }
+
+            button.innerText = `${value}`.padStart(2, "0");
+
+            target.innerText = `+${buttons.map(btn => btn.innerText).join("")}`;
+        });
+    });
 })();
