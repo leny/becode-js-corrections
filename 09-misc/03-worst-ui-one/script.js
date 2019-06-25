@@ -10,5 +10,9 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    const target = document.getElementById("target");
+
+    document.getElementById("slider").addEventListener("input", evt => {
+        target.innerText = `+${evt.currentTarget.value}`;
+    });
 })();
