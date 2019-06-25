@@ -10,5 +10,39 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    const target = document.getElementById("target");
+    const buttons = Array.from(document.querySelectorAll("button"));
+    const inputs = Array.from(document.querySelectorAll("input"));
+
+    const DELAY = 125;
+
+    buttons.forEach((button, i) => {
+        const interval = () => {
+            const input = inputs[i];
+
+            let value = parseFloat(input.value);
+
+            if (++value > parseFloat(input.getAttribute("data-max"))) {
+                value = input.getAttribute("data-min");
+            }
+
+            input.value = `${value}`.padStart(2, "0");
+
+            // kinda ugly, but, hey, I'm the coach!
+            target.innerText = `+${inputs.map(inp => inp.value).join("")}`;
+        };
+
+        let intervalID = setInterval(interval, DELAY);
+
+        button.addEventListener("click", () => {
+            if (intervalID) {
+                clearInterval(intervalID);
+                intervalID = null;
+                button.innerText = "Start";
+            } else {
+                intervalID = setInterval(interval, DELAY);
+                button.innerText = "Stop";
+            }
+        });
+    });
 })();
