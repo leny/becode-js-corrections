@@ -10,6 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
+    document.getElementById("run").addEventListener("click", () => {
     const fruits = [
         "pomme",
         "poire",
@@ -24,6 +25,10 @@
         "raisin",
         "cerise",
     ];
-
-    // your code here
+    for (var i=0; i < fruits.length; i++) { 
+        // Initialisation index 0 - rester dans la boucle jusqu'à la fin de longeur - incrémenter de 1 pour parcourir l'index
+        console.log(fruits[i]); 
+        // Afficher la liste dans le log
+        }
+    });
 })();
