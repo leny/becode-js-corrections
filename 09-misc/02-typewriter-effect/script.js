@@ -10,5 +10,23 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+// recup la phrase
+let text = document.getElementById("target");
+
+// divise le texte pour séparé chaque lettre et crée un tableau
+let textTab = text.innerText.split("");
+
+// replace le contenu de target par du "vide"
+text.innerText = "";
+
+const addcharacter = (a) => {
+    text.innerHTML += textTab[a];
+
+    if(a < textTab.length){
+
+        setTimeout(()=> {
+            addcharacter(a+=1) }, Math.floor(Math.random()* 400-200)+200); 
+    }
+}
+addcharacter(0);
 })();
