@@ -13,6 +13,23 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     const performOperation = operation => {
+        let x = parseInt(document.getElementById("op-one").value);
+        let y = parseInt(document.getElementById("op-two").value);
+        //définition des variables et je les "force" à être des valeurs
+        switch (operation) { //boucles switch ==> dans chaque cas, faire ...
+            case "addition": // dans le cas du bouton qui s'appelle "addition"
+                alert(x + y); // ... faire cette opération
+                break; // casser la bloucles
+            case "substraction":
+                alert(x - y);
+                break;
+            case "multiplication":
+                alert(x * y);
+                break;
+            case "division":
+                alert(x / y);
+                break;
+        } // répéter le code pour les trois autres opérations
         // perform the operation
     };
 
