@@ -1,0 +1,53 @@
+<!--
+ * becode/javascript
+ *
+ * /11-fetch/02-list-to-template/index.html - 11.2: liste vers template
+ *
+ * coded by leny@BeCode
+ * started at 12/05/2019
+-->
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>BeCode/JavaScript - 11.2: liste vers template</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+        <link rel="stylesheet" href="../../_shared/css/normalize.css" />
+        <link rel="stylesheet" href="../../_shared/css/styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>BeCode / JavaScript</h1>
+                <h2>
+                    <span>11.2</span>
+                    <strong>liste vers template</strong>
+                </h2>
+            </header>
+            <div class="content">
+                <section class="explain">
+                    <p>Au clic sur le bouton, utilise la fonction <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">fetch</a>, récupère la liste des X-Men et affiche-la dans la balise dont l'id est "target". Utilise la balise <strong>template</strong> pour reproduire une structure html pour chaque héros.</p>
+                </section>
+                <section class="material">
+                    <div class="actions">
+                        <button type="button" id="run">Lancer le script</button>
+                    </div>
+                    <template id="tpl-hero">
+                        <li class="hero">
+                            <h4 class="title">
+                                <strong class="name"></strong>
+                                <em class="alter-ego"></em>
+                            </h4>
+                            <p class="powers"></p>
+                        </li>
+                    </template>
+                    <ol id="target"></ol>
+                </section>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
+
