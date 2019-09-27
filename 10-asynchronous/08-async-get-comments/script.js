@@ -11,20 +11,16 @@
 
 (() => {
     document.querySelector("#run").addEventListener("click", async () => {
-        try {
-            const posts = await window.lib.getPosts();
+        const posts = await window.lib.getPosts();
 
-            const postsComments = await Promise.all(
-                posts.map(post => window.lib.getComments(post.id)),
-            );
+        const postsComments = await Promise.all(
+            posts.map(post => window.lib.getComments(post.id)),
+        );
 
-            postsComments.forEach((comments, i) => {
-                posts[i].comments = comments;
-            });
+        postsComments.forEach((comments, i) => {
+            posts[i].comments = comments;
+        });
 
-            console.log(posts);
-        } catch (error) {
-            console.error(error);
-        }
+        console.log(posts);
     });
 })();

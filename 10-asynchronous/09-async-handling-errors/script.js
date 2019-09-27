@@ -10,5 +10,13 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.querySelector("#run").addEventListener("click", async () => {
+        try {
+            const persons = await window.lib.getPersons();
+
+            console.table(persons);
+        } catch (err) {
+            console.error(err);
+        }
+    });
 })();
