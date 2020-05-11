@@ -11,4 +11,12 @@
 
 (() => {
     // your code here
+
+    let MyObj = {
+        lastname : "Cédric",
+        firstname: "Kévers",
+        age: 0,
+        city: "Liège",
+        country: "Belgique"
+};
 })();
